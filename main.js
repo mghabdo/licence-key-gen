@@ -8,19 +8,6 @@ let mainWindow
 
 function createWindow () {
 
-
-  var userInfo = {company:"MGH Developpers", email: 'mghdeveloppers@gmail.com', machineId: '9e447f4ba8fe54e0c0fe0eba204b7e33c0829f3a2a158ab57f9af527b784286a'}
-  var licenseData = {info: userInfo, prodCode: "MGHLOKATION100", appVersion: "1.0.0"}
-
-  try{
-    var license = licenseKey.createLicense(licenseData)
-    console.log('** LICENCE KEY **', license);
-  }catch(err){
-    console.log(err);
-  }
-
-
-
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 800,
