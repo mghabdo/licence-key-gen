@@ -1,5 +1,5 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, Menu} = require('electron')
 var licenseKey = require('license-key-gen');
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -10,8 +10,8 @@ function createWindow () {
 
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1200,
+    height: 760,
     webPreferences: {
       nodeIntegration: true
     }
